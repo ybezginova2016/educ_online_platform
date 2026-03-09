@@ -44,5 +44,17 @@ This represents an expected relative uplift of approximately **60%**.
 | Metric | Conversion Rate (purchase event) |
 
 # Statistical Method
+To estimate the required **sample size**, we use the standard formula for comparing two proportions.
 
-To estimate the required sample size, we use the **standard formula for comparing two proportions**:
+$
+N = \frac{(Z_{\alpha/2} + Z_{\beta})^2 \cdot \left(P_1(1-P_1) + P_2(1-P_2)\right)}{(P_2 - P_1)^2}
+$
+
+Where:
+
+- \(P_1\) — baseline conversion rate  
+- \(P_2\) — expected conversion rate  
+- \(Z_{\alpha/2}\) — critical value for the significance level  
+- \(Z_{\beta}\) — critical value corresponding to statistical power  
+
+This formula estimates the **minimum number of users required per group** to detect the expected effect size with the desired statistical power.
